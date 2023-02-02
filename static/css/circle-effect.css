@@ -1,0 +1,38 @@
+.circle {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    left: -60px;
+    border: 1px solid rgb(83, 172, 255);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: circle;
+    opacity: 0;
+
+}
+
+.circle2 {
+    animation-delay: 1.5s;
+}
+
+.circle3 {
+    animation-delay: 3s;
+}
+
+.circle4 {
+    animation-delay: 4.5s;
+}
+
+@keyframes circle {
+    0% {
+        -webkit-transform: scale(0.05);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
