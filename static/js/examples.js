@@ -1,6 +1,5 @@
 $(document).ready(function () {
 	$("#demosMenu").change(function () {
-		// window.location.href = $(this).find("option:selected").attr("id") + '.html';
 		selected_pj = $(this).find("option:selected").attr("id")
 		if (selected_pj == 'gibson') {
 			window.open('https://pearls-nintendo.netlify.app', 'Pearls Nintendo Mobile', 'width=500, height=700');
