@@ -2,9 +2,9 @@ $(document).ready(function () {
 	$("#demosMenu").change(function () {
 		selected_pj = $(this).find("option:selected").attr("id")
 		if (selected_pj == 'gibson') {
-			window.open('https://pearls-nintendo.netlify.app', 'Pearls Nintendo Mobile', 'width=500, height=700');
+			window.open('https://github.com/pearlilyy/gibson', 'Pearls Gibson Guitar');
 		} else if (selected_pj == 'starbucks') {
-			window.open('https://pearls-nintendo.netlify.app', 'Pearls Nintendo Mobile', 'width=500, height=700');
+			window.open('https://pearls-nintendo.netlify.app', 'Pearls Starbucks', 'width=500, height=700');
 		} else if (selected_pj == 'nintendo') {
 			window.open('https://pearls-nintendo.netlify.app', 'Pearls Nintendo Mobile', 'width=500, height=700');
 		} else if (selected_pj == 'coffeebean') {
