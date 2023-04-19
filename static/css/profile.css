@@ -91,10 +91,10 @@ img {
 
 .inbox .snsnav {
     position: relative;
-    width: 20%;
+    width: 30%;
     height: 100%;
     top: 0;
-    left: 80%;
+    left: 70%;
     overflow: hidden;
 }
 
@@ -108,6 +108,16 @@ img {
     margin: 20px 10px;
     overflow: hidden;
     display: block;
+}
+
+.inbox ul #project_link {
+    line-height: 30px;
+    color: #fff;
+    background-color: rgb(100, 230, 230);
+    border-radius: 20px;
+    padding: 7px 20px;
+    margin-top: 13px;
+    font-weight: 700;
 }
 
 .inbox ul a img {
@@ -159,7 +169,7 @@ img {
 	* --------------------------------------- */
 
 #section1 {
-    /* background: url(../../imgs/cover3.jpg) no-repeat top/cover; */
+    /* background: url(../../imgs/cover0.jpg) no-repeat top/cover; */
 }
 
 #section1 img {
@@ -339,6 +349,7 @@ img {
 
 #section2 .box ul {
     visibility: hidden;
+    margin-top: 30px;
 }
 
 #section2 .box ul strong {
@@ -348,7 +359,13 @@ img {
 #section2 .box .on {
     visibility: visible;
 }
-
+#section2 .box .on a {
+    color: #333;
+    background-color: rgb(100, 230, 230);
+    border-radius: 15px;
+    padding: 12px 22px;
+    font-weight: 550;
+}
 
 /* Section 3
 	* --------------------------------------- */
