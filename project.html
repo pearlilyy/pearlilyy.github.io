@@ -12,49 +12,18 @@
         
         
             <link rel="stylesheet" type="text/css" href="static/css/profile.css" />
-            <link rel="stylesheet" type="text/css" href="static/css/jquery.fullPage.css" />
+            <link rel="stylesheet" type="text/css" href="static/css/project.css" />
             <link rel="stylesheet" type="text/css" href="static/css/examples.css" />
-            <link rel="stylesheet" type="text/css" href="static/css/circle-effect.css" />
         
         
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
         
-            <script type="text/javascript" src="static/js/jquery.fullPage.js"></script>
             <script type="text/javascript" src="static/js/examples.js"></script>
             <script type="text/javascript" src="static/js/profile.js"></script>
-            <script type="text/javascript" src="static/js/circle-effect.js"></script>
         
             <script type="text/javascript">
-                $(document).ready(function () {
-                    $('#fullpage').fullpage({
-                        'verticalCentered': false,
-                        'css3': true,
-                        'sectionsColor': ['#F0F2F4', '#fff', '#111', '#fff'],
-                        'navigation': true,
-                        'navigationPosition': 'right',
-                        'navigationTooltips': ['STOCK', 'GIBSON', 'MINESWEEPER', 'SUBWAY'],
-        
-                        'afterLoad': function (anchorLink, index) {
-                            if (index == 2) {
-                                $('.imgsContainer img').addClass('active');
-                            }
-                        },
-        
-                        'onLeave': function (index, nextIndex, direction) {
-                            if (index == 3 && direction == 'down') {
-                                $('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
-                            }
-                            else if (index == 3 && direction == 'up') {
-                                $('.section').eq(index - 1).removeClass('moveUp').addClass('moveDown');
-                            }
-        
-                            $('#staticImg').toggleClass('active', (index == 2 && direction == 'down') || (index == 4 && direction == 'up'));
-                            $('#staticImg').toggleClass('moveDown', nextIndex == 4);
-                            $('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
-                        }
-                    });
-                });
+                
             </script>
         
         </head>
@@ -62,7 +31,7 @@
         <body>
             <header id="top">
                 <div class="inbox">
-                    <a href="#" id="logo">PEARL'S PORTFOLIO</a>
+                    <a href="index.html" id="logo">PEARL'S PORTFOLIO</a>
                     
                     <div class="snsnav">
                         <ul><a href="#" id="project_link">PROJECTS</a></ul>
@@ -89,90 +58,65 @@
                 <option id="board">Coming soon</option>
                 <option id="easing">Coming soon</option>
             </select>
-        
-            <div id="fullpage">
-                <div id="staticImg">
-                    <div class="imgsContainer">
-                    </div>
-                </div>
-        
-                <div class="section " id="section0">
-                    <div class="wrap">
-        
-                        <h1>ABOUT ME</h1>
-                        <div class="imgsContainer">
-                            <div class='circle circle1'></div>
-                            <div class='circle circle2'></div>
-                            <div class='circle circle3'></div>
-                            <div class='circle circle4'></div>
-                        </div>
-        
-                        <img src="imgs/me01.png" alt="pearl">
-        
-                        <div class="box">Hi! I am <strong>Jinjoo Lee(Pearl)</strong>. I'm an ambitious and self-motivated software developer. I have recently moved to the U.S. from South Korea. Also, I just got my green card. I love cats, learning languages, working out, reading books, and ice skating. I'm very passionate about learning new things. I always do my best to improve myself.
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="section1">
-                    <div class="wrap">
-                        <div class="imgsContainer">
-                            <img src="imgs/logos/pytest.png" alt="pytest">
-                            <img src="imgs/logos/azure.png" alt="azure">
-                            <img src="imgs/logos/css.png" alt="css">
-                            <img src="imgs/logos/django.png" alt="django">
-                            <img src="imgs/logos/flask.png" alt="flask">
-                            <img src="imgs/logos/docker.png" alt="docker">
-                            <img src="imgs/logos/numpy.png" alt="numpy">
-                            <img src="imgs/logos/javascript.png" alt="javascript">
-                            <img src="imgs/logos/jquery.png" alt="jquery">
-                            <img src="imgs/logos/postgresql.png" alt="postgresql">
-                            <img src="imgs/logos/mysql.png" alt="mysql">
-                            <img src="imgs/logos/aws.png" alt="aws">
-                            <img src="imgs/logos/googlecloud.png" alt="googlecloud">
-                            <img src="imgs/logos/sqlalchemy.png" alt="sqlalchemy">
-                            <img src="imgs/logos/html.png" alt="html">
-                            <img src="imgs/logos/photoshop.png" alt="photoshop">
-                            <img src="imgs/logos/pandas.png" alt="pandas">
-                            <img src="imgs/logos/python.png" alt="python">
-                            <img src="imgs/logos/php.png" alt="php">
-                            <img src="imgs/logos/illustrator.png" alt="illustrator">
-                        </div>
-        
-                        <div class="box">
-                            <h2>Skills</h2>
-                            <ul><strong>Databases:</strong><br> PostgreSQL, MySQL</ul>
-                            <ul><strong>Frameworks:</strong><br> Django, Flask, Bootstrap</ul>
-                            <ul><strong>Language:</strong><br> Python, PHP, JavaScript, HTML, CSS</ul>
-                            <ul><strong>Cloud:</strong><br> AWS, Microsoft Azure, Google Cloud</ul>
-                            <ul><strong>Applications & Libraries:</strong><br> jQuery, REST API, Docker, Pandas, NumPy,
-                                Pytest, SQLAlchemy
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="section moveDown" id="section2">
-                    <div class="wrap page" id="page1">
-                        <!--Gallery Boxes-->
-                        <div class="imgsContainer gbox">
-                        </div>
-        
-                        <!--Next/Prev Buttons-->
-                        <a href="#" class="abtn prev"><img src="imgs/left_btn.png" alt="previous project"></a>
-                        <a href="#" class="abtn next"><img src="imgs/right_btn.png" alt="next project"></a>
-                    </div>
-        
-                    <div class="box">
-                        <h2>Projects</h2>
-                        <ul class="on">For the project <strong>Gibson</strong>, I built a renewal website for Gibson guitar
-                            brand with
-                            HTML, CSS, JavaScript, JQuery, Python, Flask and Django.</ul>
-                        <ul>For the project <strong>Starbucks</strong>, I made a mobile web site with
-                            HTML, CSS, JavaScript, JQuery, Python, Flask and Django.</ul>
-                        <ul>For the project <strong>Indigo</strong>, I built a mobile website with
-                            HTML, CSS, JavaScript, JQuery, Python, Flask and Django.</ul>
-                    </div>
-                </div>
+
+            <section class="product clearfix">
+                <h1>Product</h1>
+                <p>nteger porttitor ipsum non mauris vehicula, vel cursus nisi convallis.
+                    Fusce eu enim condimentum, consequat velit vitae, eleifend urna.
+                    In feugiat purus eu sem imperdiet, quis feugiat turpis venenatis.</p>
+                <ul>
+                    <li>
+                        <img src="img/p01.jpg" alt="project01">
+                        <ul>
+                            <li class="p_name">PRODUCT01</li>
+                            <li class="p_txt">nteger porttitor ipsum non mauris vehicula, vel cursus nisi convallis.
+                                Fusce eu enim condimentum, consequat velit vitae, eleifend urna.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/p02.jpg" alt="project02">
+                        <ul>
+                            <li class="p_name">PRODUCT02</li>
+                            <li class="p_txt">nteger porttitor ipsum non mauris vehicula, vel cursus nisi convallis.
+                                Fusce eu enim condimentum, consequat velit vitae, eleifend urna.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/p03.jpg" alt="project03">
+                        <ul>
+                            <li class="p_name">PRODUCT03</li>
+                            <li class="p_txt">nteger porttitor ipsum non mauris vehicula, vel cursus nisi convallis.
+                                Fusce eu enim condimentum, consequat velit vitae, eleifend urna.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/p04.jpg" alt="project04">
+                        <ul>
+                            <li class="p_name">PRODUCT04</li>
+                            <li class="p_txt">nteger porttitor ipsum non mauris vehicula, vel cursus nisi convallis.
+                                Fusce eu enim condimentum, consequat velit vitae, eleifend urna.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/p05.jpg" alt="project05">
+                        <ul>
+                            <li class="p_name">PRODUCT05</li>
+                            <li class="p_txt">nteger porttitor ipsum non mauris vehicula, vel cursus nisi convallis.
+                                Fusce eu enim condimentum, consequat velit vitae, eleifend urna.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/p06.jpg" alt="project06">
+                        <ul>
+                            <li class="p_name">PRODUCT06</li>
+                            <li class="p_txt">nteger porttitor ipsum non mauris vehicula, vel cursus nisi convallis.
+                                Fusce eu enim condimentum, consequat velit vitae, eleifend urna.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </section>
+
         
                 <div class="section moveDown" id="section3">
                     <div class="wrap">
