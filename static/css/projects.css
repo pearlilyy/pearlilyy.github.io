@@ -34,8 +34,8 @@ body {
 .product>ul>li:hover ul {
     background: rgba(0,0,0,.8);
     transform: translateY(-490px);
-    padding-top: 200px;
-    padding-bottom: 104px;
+    padding-top: 180px;
+    padding-bottom: 150px;
     transition: all .3s;
 }
 .product>ul>li:hover .p_name {
@@ -60,6 +60,6 @@ body {
 }
 .product ul .p_txt {
     color: #777;
-    width: 281px;
+    width: 261px;
     margin: 0 auto;
 }
