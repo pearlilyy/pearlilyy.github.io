@@ -159,7 +159,7 @@ img {
 }
 
 #section0 .box strong {
-    color: #ddd;
+    color: #fff;
 }
 
 
@@ -195,6 +195,9 @@ img {
 #section1 .box ul {
     margin-bottom: 10px;
 }
+#section1 .box ul strong {
+    color: #555;
+}
 
 #section1 .imgsContainer {
     display: block;
@@ -209,6 +212,7 @@ img {
 }
 
 #section1 .imgsContainer img {
+    display: inline-block;
     position: relative;
     margin: 7px;
     width: 100px;
@@ -390,10 +394,12 @@ img {
     font-size: 2em;
     margin: 25px 0;
 }
-
+#section3 .box ul {
+    margin: 10px 0;
+}
 #section3 .box ul img {
     width: 30px;
-    margin: 5px 10px 0 0;
+    margin-right: 10px;
 }
 
 #section3 .box ul strong {
@@ -403,6 +409,7 @@ img {
 #section3 .box ul a {
     color: #aaa;
     font-size: 0.9em;
+    line-height: 30px;
 }
 
 /*fix_form ////////////////////////////*/
