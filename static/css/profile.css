@@ -381,6 +381,16 @@ img {
     width: 100%;
 }
 
+#section3 .videoContainer {
+    display: block;
+    position: absolute;
+    /* z-index: 1; */
+    top: 15%;
+    left: 5%;
+    width: 680px;
+    height: 696px;
+}
+
 #section3 .box {
     /* outline: 2px solid red; */
     position: absolute;
