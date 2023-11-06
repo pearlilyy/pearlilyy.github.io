@@ -14,8 +14,7 @@ h2 {
     color: #fff;
     background-color: rgb(100, 230, 230);
     border-radius: 20px;
-    padding: 7px 20px;
-    margin-top: 13px;
+    padding: 10px 20px;
     font-weight: 550;
 }
 
@@ -115,4 +114,8 @@ h2 {
 .section .wrap .box>div>ul>li:last-child {
     width: 55%;
     float: right;
+}
+.section .wrap .box>div>ul>li:last-child>ul>li:last-child {
+    margin-top: 30px;
+    margin-left: 50%;
 }
