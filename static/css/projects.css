@@ -41,48 +41,81 @@ h2 {
     margin-bottom: 50px;
     color: #969696;
 }
-.product>ul>li {
-    float: left;
-    width: 281px;
-    height: 350px;
-    margin: 0 6px 15px;
-    border: 2px solid #ddd;
-    overflow: hidden;
+.product .project_wrap {
+    overflow-y: hidden;
 }
-.product>ul>li:hover {
+.product .project_wrap .project_wrap_in {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: start;
+    max-height: 2700px; /* always need to extend manually */
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    /* column-count: 4; */
+}
+.product .project_wrap_in>li {
+    /* flex-direction: column; */
+    /* display: inline-block; */
+    /* width: 100%; */
+    width: 25%;
+    box-sizing: border-box;
+    /* align-content: stretch; */
+    /* flex-basis: 281px; */
+    /* border: 2px solid #ddd; */
+    /* overflow-y: hidden; */
+    position: relative;
+    /* break-inside: avoid; */
+}
+.product .project_wrap_in .content_wrap {
+    display: flex;
+    align-items: center;
+}
+.product .project_wrap_in .img_wrap {
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.product .project_wrap_in .img_wrap>img{
+    width: 290px;
+    box-sizing:border-box;
+    border-radius: 10px;
+}
+.product .project_wrap_in:hover {
     cursor: pointer;
 }
-.product>ul>li:hover ul {
-    background: rgba(0,0,0,.8);
-    transform: translateY(-490px);
-    padding-top: 180px;
-    padding-bottom: 150px;
+.product .project_wrap_in .text_wrap {
+    opacity: 0;
+    height: 0;
+    width: 100%;
+}
+.product .project_wrap_in>li:hover .img_wrap {
+    opacity: 0.2;
+}
+.product .project_wrap_in>li:hover .text_wrap {
+    position: absolute;
+    top: 10%;
+    /* height: 100%; */
+    opacity: 1;
     transition: all .3s;
 }
-.product>ul>li:hover .p_name {
-    color: #fff;
+.product .project_wrap_in>li:hover .p_name {
+    color: #333;
 }
-.product>ul>li:hover .p_txt {
-    color: #fff;
+.product .project_wrap_in>li:hover .p_txt {
+    color: #333;
 }
-.product>ul>li:last-child {
-    margin-right: 0;
-}
-.product>ul>li>img {
-    width: 281px;
-    border: 0;
-    box-sizing: border-box;
-}
-.product ul .p_name {
+
+.product .text_wrap .p_name {
     color: #666;
-    margin: 20px auto;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
-.product ul .p_txt {
+.product .text_wrap .p_txt {
     color: #777;
-    width: 261px;
+    padding-top: 10px;
+    width: 250px;
     margin: 0 auto;
+    font-size: 14px;
 }
 
 
