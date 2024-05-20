@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/index.html# -->
+<html class="fp-enabled" style="overflow: hidden; height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Pearl's Website</title>
+	
+    <link rel="icon" type="image/png" sizes="48x48" href="file:///imgs/logos/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="file:///imgs/logos/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="file:///imgs/logos/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/imgs/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/imgs/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/imgs/logos/favicon/favicon-16x16.png">
+
+	<link rel="stylesheet" type="text/css" href="./Pearl&#39;s Website_files/profile.css">
+	<link rel="stylesheet" type="text/css" href="./Pearl&#39;s Website_files/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="./Pearl&#39;s Website_files/examples.css">
+	<link rel="stylesheet" type="text/css" href="./Pearl&#39;s Website_files/circle-effect.css">
+	<link rel="stylesheet" type="text/css" href="./Pearl&#39;s Website_files/common.css">
+
+
+	<script src="./Pearl&#39;s Website_files/jquery.min.js"></script>
+	<script src="./Pearl&#39;s Website_files/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="./Pearl&#39;s Website_files/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="./Pearl&#39;s Website_files/profile.js"></script>
+	<script type="text/javascript" src="./Pearl&#39;s Website_files/circle-effect.js"></script>
+	<script type="text/javascript" src="./Pearl&#39;s Website_files/common.js"></script>
+
+	<script type="text/javascript">
+		document.title = "Pearl's Website";
+		$(document).ready(function () {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'sectionsColor': ['#F0F2F4', '#F0F2F4', '#F0F2F4', '#F0F2F4'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['PROFILE', 'SKILLS', 'PROJECTS', 'CONTACT'],
+
+				'afterLoad': function (anchorLink, index) {
+					if (index == 2) {
+						$('.imgsContainer img').addClass('active');
+					}
+				},
+
+				'onLeave': function (index, nextIndex, direction) {
+					if (index == 3 && direction == 'down') {
+						$('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if (index == 3 && direction == 'up') {
+						$('.section').eq(index - 1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down') || (index == 4 && direction == 'up'));
+					$('#staticImg').toggleClass('moveDown', nextIndex == 4);
+					$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body class="fp-viewing-1" style="overflow: hidden; height: 100%;">
+	<header id="top">
+		<div class="inbox">
+			<a href="file:///" id="logo">PEARL'S PORTFOLIO</a>
+			<div class="snsnav">
+				<ul><a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/project.html" id="project_link">PROJECTS</a></ul>
+				<ul><a href="mailto:pearlynjlee@gmail.com"><img src="./Pearl&#39;s Website_files/email.png" alt="Go to send an email to Pearl"></a></ul>
+				<ul><a href="https://github.com/pearlilyy"><img src="./Pearl&#39;s Website_files/github.png" alt="Go to Pearl&#39;s Github Profile"></a></ul>
+				<ul><a href="https://www.linkedin.com/in/pearllj"><img src="./Pearl&#39;s Website_files/linkedin.png" alt="Go to Pearl&#39;s LinkedIn Profile"></a></ul>
+				<ul><a href="tel:424-341-8310"><img src="./Pearl&#39;s Website_files/phone.png" alt="Go to send a text message to Pearl"></a></ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- <select id="demosMenu">
+		<option selected>Choose Project</option>
+		<option id="gibson">Gibson Guitar</option>
+		<option id="starbucks">Starbucks</option>
+		<option id="nintendo">Nintendo</option>
+		<option id="coffeebean">Coffee Bean</option>
+		<option id="subway">Subway</option>
+		<option id="hanabank">Hand Bank</option>
+		<option id="coco">Coco Design</option>
+		<option id="easing">Coming soon</option>
+	</select> -->
+	<div class="quickmenu-outer">
+		<svg class="quickmenu">
+			<circle id="quickmenu-circle" cx="35" cy="35" r="31" stroke-dasharray="1000" stroke-dashoffset="1000"></circle>
+		</svg>
+		<ul>
+			<li><a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/static/documents/Resume_Jinjoolee.pdf" download="" target="_blank">Resume</a></li>
+		</ul>
+	</div>
+
+	<div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
+		<div id="staticImg">
+			<div class="imgsContainer">
+			</div>
+		</div>
+
+		<div class="section fp-section active" id="section0" style="height: 881px; background-color: rgb(240, 242, 244);">
+			<div class="wrap">
+				<h1>ABOUT ME</h1>
+				<div class="img_wrap">
+					<img src="./Pearl&#39;s Website_files/me01.png" alt="pearl">
+					<div class="img_circle"> </div>
+				</div>
+
+				
+				<div class="box">Hello there! Welcome to my webpage! I am <strong>Jinjoo(Pearl) Lee</strong>, a passionate and creative designer committed to pushing the boundaries of design and innovation. Through this portfolio, I invite you to embark on a journey into my world of creativity, explore my diverse projects, and witness the passion and dedication that drive my work.
+					Originally from South Korea, I made the leap to the USA in 2022 to pursue my passion for design and embark on an exciting new chapter in my career. 
+					Since then, I've been making waves as a graphic &amp; web designer, receiving notable feedback from colleagues and peers. 
+					From the moment I took on my first design project in college, I've consistently been praised as the top designer and worker in my position. 
+					I'm looking forward to the opportunity to work with you and bring your creative visions to life.
+				</div>
+			</div>
+		</div>
+		<div class="section fp-section" id="section1" style="height: 881px; background-color: rgb(240, 242, 244);">
+			<div class="wrap">
+				<div class="imgsContainer">
+					<img src="./Pearl&#39;s Website_files/pytest.png" alt="pytest">
+					<img src="./Pearl&#39;s Website_files/azure.png" alt="azure" class="">
+					<img src="./Pearl&#39;s Website_files/css.png" alt="css" class="">
+					<img src="./Pearl&#39;s Website_files/django.png" alt="django" class="">
+					<img src="./Pearl&#39;s Website_files/flask.png" alt="flask" class="">
+					<img src="./Pearl&#39;s Website_files/docker.png" alt="docker" class="">
+					<img src="./Pearl&#39;s Website_files/numpy.png" alt="numpy" class="">
+					<img src="./Pearl&#39;s Website_files/javascript.png" alt="javascript" class="">
+					<img src="./Pearl&#39;s Website_files/jquery.png" alt="jquery" class="">
+					<img src="./Pearl&#39;s Website_files/postgresql.png" alt="postgresql" class="on">
+					<img src="./Pearl&#39;s Website_files/mysql.png" alt="mysql" class="">
+					<img src="./Pearl&#39;s Website_files/aws.png" alt="aws" class="">
+					<img src="./Pearl&#39;s Website_files/googlecloud.png" alt="googlecloud" class="">
+					<img src="./Pearl&#39;s Website_files/sqlalchemy.png" alt="sqlalchemy" class="">
+					<img src="./Pearl&#39;s Website_files/html.png" alt="html" class="">
+					<img src="./Pearl&#39;s Website_files/photoshop.png" alt="photoshop" class="">
+					<img src="./Pearl&#39;s Website_files/pandas.png" alt="pandas" class="">
+					<img src="./Pearl&#39;s Website_files/python.png" alt="python" class="">
+					<img src="./Pearl&#39;s Website_files/php.png" alt="php" class="">
+					<img src="./Pearl&#39;s Website_files/illustrator.png" alt="illustrator" class="">
+				</div>
+
+				<div class="box">
+					<h2>Skills</h2>
+					<ul><strong>Design:</strong> Adobe XD, Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Figma, Adobe Character Animator, Adobe Animate</ul>
+					<ul><strong>Databases:</strong> PostgreSQL, MySQL</ul>
+					<ul><strong>Frameworks:</strong> Django, Flask, Bootstrap</ul>
+					<ul><strong>Language:</strong> Python, PHP, JavaScript, HTML, CSS</ul>
+					<ul><strong>Cloud:</strong> AWS, Microsoft Azure, Google Cloud</ul>
+					<ul><strong>Applications &amp; Libraries:</strong> jQuery, REST API, Docker, Pandas, NumPy,
+						Pytest, SQLAlchemy
+					</ul>
+					<ul><strong>ETC:</strong> Kubernetes, WordPress, Git, GitHub, UI/UX, JSON, Ajax, Microsoft Excel, Microsoft Access, Unbounce, Brevo</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Gallery Boxes -->
+		<div class="section moveDown fp-section" id="section2" style="height: 881px; background-color: rgb(240, 242, 244);">
+			<div class="wrap page" id="page1">
+				<div class="imgsContainer gbox">
+					<img src="./Pearl&#39;s Website_files/project_nintendo.png" alt="project-nintendo" class="i1" onclick="window.open(&#39;//pearls-nintendo.netlify.app&#39;, &#39;Pearls Nintendo Mobile&#39;, &#39;width=500, height=700&#39;);">
+					<img src="./Pearl&#39;s Website_files/project_coffee_bean.png" alt="project-coffeebean" class="i2" onclick="window.open(&#39;//pearls-coffeebean.netlify.app/&#39;, &#39;Pearls Coffee Bean&#39;, &#39;width=500, height=700&#39;);">
+					<img src="./Pearl&#39;s Website_files/gibson_guitar.png" alt="project-gibson" class="i3" onclick="window.open(&#39;//pearls-gibson.netlify.app/&#39;);">
+					<img src="./Pearl&#39;s Website_files/project_subway.png" alt="project-subway" class="i4" onclick="window.open(&#39;//pearls-subway.netlify.app/&#39;);">
+					<img src="./Pearl&#39;s Website_files/project_coco.png" alt="project-cocodesign" class="i5" onclick="window.open(&#39;//pearls-coco.netlify.app/&#39;);">
+				</div>
+
+				<!-- <a href="#" class="abtn prev"><img src="imgs/left_btn.png" alt="previous project"></a>
+				<a href="#" class="abtn next"><img src="imgs/right_btn.png" alt="next project"></a> -->
+				<a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/index.html#" class="abtn prev">&lt;</a>
+				<a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/index.html#" class="abtn next">&gt;</a>
+			</div>
+
+			<div class="box">
+				<h2>Development &amp; Design Projects</h2>
+				<ul class="on"><a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/project.html">Go to the Projects page</a></ul>
+				<!-- <ul>For the project <strong>Starbucks</strong>, I made a mobile web site with
+					HTML, CSS, JavaScript, JQuery, Python, Flask and Django.</ul>
+				<ul>For the project <strong>Indigo</strong>, I built a mobile website with
+					HTML, CSS, JavaScript, JQuery, Python, Flask and Django.</ul> -->
+			</div>
+		</div>
+
+		<div class="section moveDown fp-section" id="section3" style="height: 881px; background-color: rgb(240, 242, 244);">
+			<div class="wrap">
+				<div class="videoContainer">
+					<video height="90%" autoplay="" loop="">
+						<source src="imgs/videos/pearl_handwriting.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<!-- <div>
+					<p>Resume Download</p>
+					<a href="#"><img src="" alt="resume"></a>
+				</div> -->
+				<div class="box">
+					<h2>Contact</h2> <span>Send an email or text me!</span>
+					<ul><img src="./Pearl&#39;s Website_files/email.png" alt="Send Email"><strong>Email: </strong>
+						<a href="mailto:pearlynjlee@gmail.com">pearlynjlee@gmail.com</a>
+					<ul><img src="./Pearl&#39;s Website_files/linkedin.png" alt="LinkedIn Profile"><strong>LinkedIn: </strong>
+						<a href="https://www.linkedin.com/in/pearllj/">linkedin.com/in/pearllj/</a>
+					</ul>
+					<ul><img src="./Pearl&#39;s Website_files/github.png" alt="GitHub Profile"><strong>GitHub: </strong>
+						<a href="https://github.com/pearlilyy">github.com/pearlilyy</a>
+					</ul>
+					</ul>
+					<ul><img src="./Pearl&#39;s Website_files/phone.png" alt="Make a Phone Call"><strong>Phone: </strong>
+						<a href="tel:424-341-8310"> +1(424) 341-8310</a>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+<div id="fp-nav" class="right" style="margin-top: -43.5px;"><ul><li><a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/index.html#" class="active"><span></span></a><div class="fp-tooltip right">PROFILE</div></li><li><a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/index.html#"><span></span></a><div class="fp-tooltip right">SKILLS</div></li><li><a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/index.html#"><span></span></a><div class="fp-tooltip right">PROJECTS</div></li><li><a href="file:///Users/pearlyn/Desktop/github/github_page/pearlilyy.github.io/index.html#"><span></span></a><div class="fp-tooltip right">CONTACT</div></li></ul></div></body></html>

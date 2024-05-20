@@ -4,10 +4,10 @@
     right: 2%;
     width: 70px;
     height: 70px;
-    background-color: #05b8a3;
+    background-color: #0055aa;
     border-radius: 50%;
     z-index: 10;
-    box-shadow: 0 0 0 3px rgba(5,184,163,30%);
+    box-shadow: 0 0 0 3px rgba(0,85,170,30%);
     }
     .quickmenu-outer:hover {
     /* calculate using: (2 * PI * R) /
