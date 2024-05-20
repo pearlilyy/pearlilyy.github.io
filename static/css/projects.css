@@ -41,9 +41,7 @@ h2 {
     margin-bottom: 50px;
     color: #969696;
 }
-.product .project_wrap {
-    overflow-y: hidden;
-}
+
 .product .project_wrap .project_wrap_in {
     display: flex;
     flex-direction: column;
